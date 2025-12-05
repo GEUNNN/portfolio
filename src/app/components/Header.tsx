@@ -3,7 +3,7 @@ const Header = () => {
     <header className="sticky top-0 flex items-center justify-between p-4 shadow-md z-50">
       <h1>Geunhwa Lee</h1>
       <nav>
-        <ul className="flex flex-row">
+        <ul className="flex flex-row gap-10">
           <li>
             <a href="#home">Home</a>
           </li>
