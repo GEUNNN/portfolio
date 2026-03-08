@@ -1,49 +1,44 @@
-const experiences = [
-  {
-    company: "Acme Corporation",
-    role: "Frontend Developer",
-    period: "Jan 2023 – Present",
-    bullets: [
-      "Led development of the main product dashboard used by 10,000+ users",
-      "Improved page load performance by 40% through code splitting and lazy loading",
-      "Mentored junior developers and conducted weekly code reviews",
-    ],
-    tags: ["React", "TypeScript", "Tailwind CSS", "React Query"],
-  },
-  {
-    company: "Startup XYZ",
-    role: "Junior Frontend Developer",
-    period: "Jun 2021 – Dec 2022",
-    bullets: [
-      "Built a reusable component library adopted across multiple products",
-      "Collaborated with designers to implement pixel-perfect UI from Figma",
-      "Integrated third-party APIs and payment gateways",
-    ],
-    tags: ["React", "JavaScript", "Styled Components"],
-  },
-  {
-    company: "Freelance",
-    role: "Web Developer",
-    period: "Jan 2020 – May 2021",
-    bullets: [
-      "Developed and delivered 10+ client websites across various industries",
-      "Managed full project lifecycle from requirements to deployment",
-    ],
-    tags: ["React", "Next.js", "CSS", "Git"],
-  },
-];
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
 
 const Experience = () => {
+  const { dict } = useLanguage();
+
+  const experiences = [
+    {
+      company: "Acme Corporation",
+      role: dict.experience.list[0].role,
+      period: dict.experience.list[0].period,
+      bullets: dict.experience.list[0].bullets,
+      tags: ["React", "TypeScript", "Tailwind CSS", "React Query"],
+    },
+    {
+      company: "Startup XYZ",
+      role: dict.experience.list[1].role,
+      period: dict.experience.list[1].period,
+      bullets: dict.experience.list[1].bullets,
+      tags: ["React", "JavaScript", "Styled Components"],
+    },
+    {
+      company: "Freelance",
+      role: dict.experience.list[2].role,
+      period: dict.experience.list[2].period,
+      bullets: dict.experience.list[2].bullets,
+      tags: ["React", "Next.js", "CSS", "Git"],
+    },
+  ];
+
   return (
     <section
       id="experience"
       className="py-24 px-8 md:px-20 flex flex-col items-center text-center"
     >
       <p className="font-mono text-sm tracking-widest text-red-400 uppercase mb-2">
-        Work History
+        {dict.experience.subtitle}
       </p>
       <h2 className="font-serif text-4xl md:text-5xl font-bold mb-12">
-        Experience
+        {dict.experience.title}
       </h2>
 
       <div className="space-y-0 w-full max-w-3xl text-left">
@@ -70,7 +65,7 @@ const Experience = () => {
                 {period}
               </p>
               <ul className="space-y-2 mb-4">
-                {bullets.map((b, i) => (
+                {bullets.map((b: string, i: number) => (
                   <li key={i} className="flex gap-2 text-sm text-zinc-400">
                     <span className="text-red-400 mt-0.5 shrink-0">▸</span>
                     <span>{b}</span>

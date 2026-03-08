@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Nunito } from "next/font/google";
+import { LanguageProvider } from "./context/LanguageContext";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${nunito.variable} ${jetbrains.variable} antialiased font-sans`}
       >
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

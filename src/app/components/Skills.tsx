@@ -1,16 +1,21 @@
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
 import { skillsList } from "@/constants/skills";
 
 const Skills = () => {
+  const { dict } = useLanguage();
+
   return (
     <section
       id="skills"
       className="py-24 px-8 md:px-20 flex flex-col items-center text-center"
     >
       <p className="font-mono text-sm tracking-widest text-red-400 uppercase mb-2">
-        What I Know
+        {dict.skills.subtitle}
       </p>
       <h2 className="font-serif text-4xl md:text-5xl font-bold mb-12">
-        Skills
+        {dict.skills.title}
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 w-full max-w-5xl">

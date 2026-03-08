@@ -1,36 +1,32 @@
-const stats = [
-  { value: "3+", label: "Years Experience" },
-  { value: "15+", label: "Projects" },
-  { value: "10+", label: "Happy Clients" },
-];
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
 
 const About = () => {
+  const { dict } = useLanguage();
+
+  const stats = [
+    { value: "3+", label: dict.about.stats.experience },
+    { value: "15+", label: dict.about.stats.projects },
+    { value: "10+", label: dict.about.stats.clients },
+  ];
+
   return (
     <section
       id="about"
       className="py-24 px-8 md:px-20 flex flex-col items-center text-center"
     >
       <p className="font-mono text-sm tracking-widest text-red-400 uppercase mb-2">
-        Get To Know
+        {dict.about.subtitle}
       </p>
       <h2 className="font-serif text-4xl md:text-5xl font-bold mb-12">
-        About Me
+        {dict.about.title}
       </h2>
 
       <div className="grid md:grid-cols-2 gap-16 items-start w-full max-w-5xl text-left">
         <div className="space-y-6 text-zinc-400 leading-relaxed">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </p>
+          <p>{dict.about.p1}</p>
+          <p>{dict.about.p2}</p>
         </div>
 
         <div className="grid grid-cols-3 gap-4">

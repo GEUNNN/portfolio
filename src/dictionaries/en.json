@@ -1,0 +1,101 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "langToggle": "KO / EN"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Geunhwa Lee",
+    "role": "Frontend Developer",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "connectBtn": "Let's Connect",
+    "projectsBtn": "View Projects"
+  },
+  "about": {
+    "subtitle": "Get To Know",
+    "title": "About Me",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects",
+      "clients": "Happy Clients"
+    }
+  },
+  "skills": {
+    "subtitle": "What I Know",
+    "title": "Skills"
+  },
+  "projects": {
+    "subtitle": "What I've Built",
+    "title": "Projects",
+    "demo": "Live Demo →",
+    "github": "GitHub →",
+    "list": [
+      {
+        "title": "Project Alpha",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A full-stack web application built with modern technologies to solve real-world problems."
+      },
+      {
+        "title": "Project Beta",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut labore et dolore magna aliqua."
+      },
+      {
+        "title": "Project Gamma",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis."
+      },
+      {
+        "title": "Project Delta",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure."
+      }
+    ]
+  },
+  "experience": {
+    "subtitle": "Work History",
+    "title": "Experience",
+    "present": "Present",
+    "list": [
+      {
+        "role": "Frontend Developer",
+        "period": "Jan 2023 – Present",
+        "bullets": [
+          "Led development of the main product dashboard used by 10,000+ users",
+          "Improved page load performance by 40% through code splitting and lazy loading",
+          "Mentored junior developers and conducted weekly code reviews"
+        ]
+      },
+      {
+        "role": "Junior Frontend Developer",
+        "period": "Jun 2021 – Dec 2022",
+        "bullets": [
+          "Built a reusable component library adopted across multiple products",
+          "Collaborated with designers to implement pixel-perfect UI from Figma",
+          "Integrated third-party APIs and payment gateways"
+        ]
+      },
+      {
+        "role": "Web Developer",
+        "period": "Jan 2020 – May 2021",
+        "bullets": [
+          "Developed and delivered 10+ client websites across various industries",
+          "Managed full project lifecycle from requirements to deployment"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "subtitle": "Get In Touch",
+    "title": "Contact",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feel free to reach out if you'd like to work together or just say hello.",
+    "button": "Say Hello →"
+  },
+  "footer": {
+    "copyright": "© 2026 Geunhwa Lee. All rights reserved.",
+    "designPrefix": "Design inspired by"
+  }
+}

@@ -1,14 +1,20 @@
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
+
 const socials = ["GitHub", "LinkedIn", "Twitter"];
 
 const Footer = () => {
+  const { dict } = useLanguage();
+
   return (
     <footer className="py-8 px-8 md:px-20 border-t border-white/5 flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4">
       <div className="flex flex-col items-center sm:items-start gap-1">
         <p className="font-serif text-sm text-zinc-600">
-          © 2026 Geunhwa Lee. All rights reserved.
+          {dict.footer.copyright}
         </p>
         <p className="font-serif text-xs text-zinc-500">
-          Design inspired by{" "}
+          {dict.footer.designPrefix}{" "}
           <a
             href="https://www.abhayrana.com/"
             target="_blank"
