@@ -2,7 +2,13 @@
 
 import { useLanguage } from "../context/LanguageContext";
 
-const socials = ["GitHub", "LinkedIn", "Twitter"];
+const socials = [
+  { type: "GitHub", url: "https://github.com/GEUNNN" },
+  {
+    type: "LinkedIn",
+    url: "https://www.linkedin.com/in/geunhwa-lee-65ba7655/",
+  },
+];
 
 const Contact = () => {
   const { dict } = useLanguage();
@@ -22,7 +28,7 @@ const Contact = () => {
         {dict.contact.description}
       </p>
       <a
-        href="mailto:your@email.com"
+        href="mailto:geunhwa.lee.01@gmail.com"
         className="inline-block px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-medium rounded transition-colors duration-200 mb-12"
       >
         {dict.contact.button}
@@ -30,11 +36,11 @@ const Contact = () => {
       <div className="flex justify-center gap-8 text-zinc-500 text-sm">
         {socials.map((social) => (
           <a
-            key={social}
-            href="#"
+            key={social.type}
+            href={social.url}
             className="hover:text-red-400 transition-colors duration-200"
           >
-            {social}
+            {social.type}
           </a>
         ))}
       </div>

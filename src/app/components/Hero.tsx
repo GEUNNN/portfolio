@@ -19,7 +19,7 @@ const Hero = () => {
       <h2 className="text-2xl md:text-3xl text-zinc-400 mb-8">
         {dict.hero.role}
       </h2>
-      <p className="text-zinc-500 max-w-xl mb-10 leading-relaxed">
+      <p className="whitespace-pre-line text-zinc-500 max-w-xl mb-10 leading-relaxed">
         {dict.hero.description}
       </p>
       <div className="flex justify-center gap-4">
@@ -30,10 +30,10 @@ const Hero = () => {
           {dict.hero.connectBtn}
         </a>
         <a
-          href="#projects"
+          href="#experience"
           className="px-6 py-3 border border-white/20 hover:border-white/50 text-zinc-300 font-medium rounded transition-colors duration-200"
         >
-          {dict.hero.projectsBtn}
+          {dict.hero.experienceBtn}
         </a>
       </div>
     </section>
