@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { useLanguage } from "../context/LanguageContext";
 
 const Hero = () => {
@@ -39,6 +40,7 @@ const Hero = () => {
         <a
           href={resumeHref}
           download
+          onClick={() => track("resume_download", { language: lang })}
           className="px-6 py-3 border border-white/20 hover:border-white/50 text-zinc-300 font-medium rounded transition-colors duration-200"
         >
           {dict.hero.resumeBtn}

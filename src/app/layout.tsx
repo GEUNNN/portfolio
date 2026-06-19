@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Nunito } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { LanguageProvider } from "./context/LanguageContext";
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={`${inter.variable} ${nunito.variable} ${jetbrains.variable} antialiased font-sans`}
       >
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
