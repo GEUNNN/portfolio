@@ -11,20 +11,21 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Geunhwa Lee",
-    "role": "Frontend Developer",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "role": "Frontend Engineer",
+    "description": "A frontend engineer who builds real business impact.\nAcross products from 5M-user global platforms to early-stage commerce, I work end-to-end on web and mobile with React and React Native — improving user experience and driving growth.",
     "connectBtn": "Let's Connect",
-    "experienceBtn": "View Experience"
+    "experienceBtn": "View Experience",
+    "resumeBtn": "Download Resume"
   },
   "about": {
     "subtitle": "Get To Know",
     "title": "About Me",
-    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "p1": "I'm a frontend engineer with 6+ years building React and React Native applications across consumer products serving 5M+ total users. I focus on design systems, performance, and monetization features that move real business metrics.",
+    "p2": "I've architected design-token pipelines and shared component libraries, re-architected legacy systems to cut server costs by 90%, and shipped offerwall, point, and coupon features tied directly to growth. I care about measurable impact, not just shipping code.",
     "stats": {
       "experience": "Years Experience",
-      "projects": "Projects",
-      "clients": "Happy Clients"
+      "users": "Users Served",
+      "impact": "Server Cost Cut"
     }
   },
   "skills": {
@@ -34,64 +35,74 @@
   "projects": {
     "subtitle": "What I've Built",
     "title": "Projects",
-    "demo": "Live Demo →",
     "github": "GitHub →",
     "list": [
       {
-        "title": "Project Alpha",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A full-stack web application built with modern technologies to solve real-world problems."
-      },
-      {
-        "title": "Project Beta",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut labore et dolore magna aliqua."
-      },
-      {
-        "title": "Project Gamma",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis."
-      },
-      {
-        "title": "Project Delta",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure."
+        "title": "Watcha Clone",
+        "description": "A Watcha-style movie and TV discovery service, built as a TypeScript pnpm monorepo with a modular, scalable package architecture.",
+        "tech": ["TypeScript", "React", "pnpm Monorepo", "CSS"],
+        "github": "https://github.com/GEUNNN/watcha-clone"
       }
     ]
   },
   "experience": {
     "subtitle": "Work History",
     "title": "Experience",
-    "present": "Present",
     "list": [
       {
-        "role": "Frontend Developer",
-        "period": "Jan 2023 – Present",
+        "company": "EzlLabs",
+        "role": "Software Engineer",
+        "period": "Jan 2024 – Nov 2025",
         "bullets": [
-          "Led development of the main product dashboard used by 10,000+ users",
-          "Improved page load performance by 40% through code splitting and lazy loading",
-          "Mentored junior developers and conducted weekly code reviews"
-        ]
+          "Architected a design token pipeline and shared component library (Button, Modal, Toast) — 60% component reuse and 25% less UI development time",
+          "Integrated NAS Media & BuzzBenefit offerwall SDKs end-to-end, driving 12,900 new MAU and 90,000 point payouts in the first month",
+          "Drove combined MAU to 262,000 through a full UI/UX overhaul and re-launch of two mobile products",
+          "Owned the full iOS/Android release lifecycle — build config, code signing, and App Store / Play Store submission"
+        ],
+        "tech": ["React Native", "TypeScript", "React Query", "Recoil"]
       },
       {
-        "role": "Junior Frontend Developer",
-        "period": "Jun 2021 – Dec 2022",
+        "company": "Katchers",
+        "role": "Software Engineer",
+        "period": "Aug 2022 – Jan 2024",
         "bullets": [
-          "Built a reusable component library adopted across multiple products",
-          "Collaborated with designers to implement pixel-perfect UI from Figma",
-          "Integrated third-party APIs and payment gateways"
-        ]
+          "Refactored an inherited third-party codebase to TypeScript and Recoil, cutting runtime type errors by ~40%",
+          "Established Cypress E2E coverage for critical flows (login, checkout, order tracking) within the CI pipeline",
+          "Improved Core Web Vitals via code splitting and tree shaking, reducing unused JavaScript by ~30%",
+          "Shipped team-draw, group-buy, points, and coupon features tied to core GMV metrics"
+        ],
+        "tech": ["React", "TypeScript", "Recoil", "Emotion"]
       },
       {
-        "role": "Web Developer",
-        "period": "Jan 2020 – May 2021",
+        "company": "Gleam Media Group",
+        "role": "Software Engineer",
+        "period": "Aug 2021 – Mar 2022",
         "bullets": [
-          "Developed and delivered 10+ client websites across various industries",
-          "Managed full project lifecycle from requirements to deployment"
-        ]
+          "Re-architected legacy PHP pages as a React SPA for StarPlay, a global K-POP fan platform (5M users, 300K+ MAU), reducing server costs by 90%",
+          "Implemented i18n for a globally distributed user base (80%+ international traffic), improving customer satisfaction by 20%"
+        ],
+        "tech": ["React", "TypeScript", "React Query", "Emotion"]
+      },
+      {
+        "company": "Hear.com Korea",
+        "role": "SEO & Performance Marketing Specialist",
+        "period": "Jul 2020 – Feb 2021",
+        "bullets": [],
+        "tech": []
+      },
+      {
+        "company": "Ascent Korea",
+        "role": "SEO Analyst",
+        "period": "Dec 2018 – Jul 2020",
+        "bullets": [],
+        "tech": []
       }
     ]
   },
   "contact": {
     "subtitle": "Get In Touch",
     "title": "Contact",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feel free to reach out if you'd like to work together or just say hello.",
+    "description": "I'm open to frontend roles and collaborations. Feel free to reach out if you'd like to work together or just say hello.",
     "button": "Say Hello →"
   },
   "footer": {

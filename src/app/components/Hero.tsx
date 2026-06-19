@@ -3,7 +3,8 @@
 import { useLanguage } from "../context/LanguageContext";
 
 const Hero = () => {
-  const { dict } = useLanguage();
+  const { dict, lang } = useLanguage();
+  const resumeHref = lang === "ko" ? "/resume_ko.pdf" : "/resume_en.pdf";
 
   return (
     <section
@@ -22,7 +23,7 @@ const Hero = () => {
       <p className="whitespace-pre-line text-zinc-500 max-w-xl mb-10 leading-relaxed">
         {dict.hero.description}
       </p>
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <a
           href="#contact"
           className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded transition-colors duration-200"
@@ -34,6 +35,13 @@ const Hero = () => {
           className="px-6 py-3 border border-white/20 hover:border-white/50 text-zinc-300 font-medium rounded transition-colors duration-200"
         >
           {dict.hero.experienceBtn}
+        </a>
+        <a
+          href={resumeHref}
+          download
+          className="px-6 py-3 border border-white/20 hover:border-white/50 text-zinc-300 font-medium rounded transition-colors duration-200"
+        >
+          {dict.hero.resumeBtn}
         </a>
       </div>
     </section>

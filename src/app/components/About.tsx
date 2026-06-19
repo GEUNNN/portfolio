@@ -6,9 +6,9 @@ const About = () => {
   const { dict } = useLanguage();
 
   const stats = [
-    { value: "3+", label: dict.about.stats.experience },
-    { value: "15+", label: dict.about.stats.projects },
-    { value: "10+", label: dict.about.stats.clients },
+    { value: "6+", label: dict.about.stats.experience },
+    { value: "5M+", label: dict.about.stats.users },
+    { value: "90%", label: dict.about.stats.impact },
   ];
 
   return (

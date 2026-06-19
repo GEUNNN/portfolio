@@ -5,9 +5,9 @@ import { useLanguage } from "../context/LanguageContext";
 const navItems = [
   "home",
   "about",
+  "experience",
   "skills",
   "projects",
-  "experience",
   "contact",
 ] as const;
 

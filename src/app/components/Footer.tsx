@@ -2,7 +2,11 @@
 
 import { useLanguage } from "../context/LanguageContext";
 
-const socials = ["GitHub", "LinkedIn", "Twitter"];
+const socials = [
+  { label: "GitHub", url: "https://github.com/GEUNNN" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/geunhwa-lee-65ba7655/" },
+  { label: "Email", url: "mailto:geunhwa.lee.01@gmail.com" },
+];
 
 const Footer = () => {
   const { dict } = useLanguage();
@@ -28,11 +32,13 @@ const Footer = () => {
       <div className="flex gap-6 text-sm text-zinc-600">
         {socials.map((social) => (
           <a
-            key={social}
-            href="#"
+            key={social.label}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-red-400 transition-colors duration-200"
           >
-            {social}
+            {social.label}
           </a>
         ))}
       </div>
