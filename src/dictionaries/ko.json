@@ -36,7 +36,15 @@
     "subtitle": "내가 만든 것들",
     "title": "Projects",
     "github": "깃허브 →",
+    "live": "라이브 →",
     "list": [
+      {
+        "title": "SHB Archive (진행 중)",
+        "description": "아티스트의 활동을 사진·영상·캘린더로 모아 보는 팬 메이드 아카이브 웹앱입니다. 기획·디자인·프론트엔드·데이터 수집·배포까지 전 과정을 직접 진행했으며, YouTube·SNS에 흩어진 콘텐츠를 수집 스크립트로 모아 Supabase에 적재하고 날짜 기반으로 다시 보여줍니다. 현재 4개 핵심 화면의 MVP가 라이브로 동작합니다.",
+        "tech": ["Next.js", "TypeScript", "Supabase", "Tailwind", "Cloudflare R2"],
+        "github": "https://github.com/GEUNNN/shb-archive",
+        "live": "https://shb-archive.vercel.app"
+      },
       {
         "title": "왓챠 클론",
         "description": "왓챠를 레퍼런스로 한 영화·콘텐츠 탐색 서비스입니다. TypeScript 기반 pnpm 모노레포로 모듈형·확장 가능한 패키지 구조를 구성했습니다.",

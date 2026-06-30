@@ -36,7 +36,15 @@
     "subtitle": "What I've Built",
     "title": "Projects",
     "github": "GitHub →",
+    "live": "Live →",
     "list": [
+      {
+        "title": "SHB Archive (WIP)",
+        "description": "A fan-made archive web app that gathers an artist's activity into photos, videos, and a calendar. I handled the full process end-to-end — planning, design, frontend, data ingestion, and deployment — collecting content scattered across YouTube and social platforms via custom scripts, storing it in Supabase, and resurfacing it by date. The MVP of all four core screens is currently live.",
+        "tech": ["Next.js", "TypeScript", "Supabase", "Tailwind", "Cloudflare R2"],
+        "github": "https://github.com/GEUNNN/shb-archive",
+        "live": "https://shb-archive.vercel.app"
+      },
       {
         "title": "Watcha Clone",
         "description": "A Watcha-style movie and TV discovery service, built as a TypeScript pnpm monorepo with a modular, scalable package architecture.",

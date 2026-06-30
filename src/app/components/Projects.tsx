@@ -20,7 +20,7 @@ const Projects = () => {
       </h2>
 
       <div className="grid gap-6 w-full max-w-xl text-left">
-        {projects.map(({ title, description, tech, github }) => (
+        {projects.map(({ title, description, tech, github, live }) => (
           <div
             key={title}
             className="flex flex-col gap-4 p-6 rounded-lg border border-white/5 bg-white/5 hover:border-white/10 transition-all duration-200"
@@ -48,6 +48,16 @@ const Projects = () => {
               >
                 {dict.projects.github}
               </a>
+              {live && (
+                <a
+                  href={live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors"
+                >
+                  {dict.projects.live}
+                </a>
+              )}
             </div>
           </div>
         ))}
