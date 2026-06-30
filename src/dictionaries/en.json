@@ -20,10 +20,10 @@
   "about": {
     "subtitle": "Get To Know",
     "title": "About Me",
-    "p1": "I'm a frontend engineer with 6+ years building React and React Native applications across consumer products serving 5M+ total users. I focus on design systems, performance, and monetization features that move real business metrics.",
-    "p2": "I've architected design-token pipelines and shared component libraries, re-architected legacy systems to cut server costs by 90%, and shipped offerwall, point, and coupon features tied directly to growth. I care about measurable impact, not just shipping code.",
+    "p1": "I'm a frontend engineer building React and React Native applications across consumer products serving 5M+ total users. I focus on design systems, performance, and monetization features that move real business metrics.",
+    "p2": "I've architected design-token pipelines and shared component libraries, re-architected legacy systems to cut server costs by 90% (alongside a backend/DB migration), and shipped offerwall, point, and coupon features tied directly to growth. I care about measurable impact, not just shipping code.",
     "stats": {
-      "experience": "Years Experience",
+      "mau": "MAU",
       "users": "Users Served",
       "impact": "Server Cost Cut"
     }
@@ -66,9 +66,9 @@
         "role": "Software Engineer",
         "period": "Aug 2022 – Jan 2024",
         "bullets": [
-          "Refactored an inherited third-party codebase to TypeScript and Recoil, cutting runtime type errors by ~40%",
+          "Refactored an inherited third-party codebase to TypeScript and Recoil, improving runtime type safety",
           "Established Cypress E2E coverage for critical flows (login, checkout, order tracking) within the CI pipeline",
-          "Improved Core Web Vitals via code splitting and tree shaking, reducing unused JavaScript by ~30%",
+          "Improved Core Web Vitals via code splitting and tree shaking, reducing initial load by trimming the JavaScript bundle",
           "Shipped team-draw, group-buy, points, and coupon features tied to core GMV metrics"
         ],
         "tech": ["React", "TypeScript", "Recoil", "Emotion"]
@@ -78,8 +78,9 @@
         "role": "Software Engineer",
         "period": "Aug 2021 – Mar 2022",
         "bullets": [
-          "Re-architected legacy PHP pages as a React SPA for StarPlay, a global K-POP fan platform (5M users, 300K+ MAU), reducing server costs by 90%",
-          "Implemented i18n for a globally distributed user base (80%+ international traffic), improving customer satisfaction by 20%"
+          "Re-architected legacy PHP pages as a React SPA for StarPlay, a global K-POP fan platform (5M users, 300K+ MAU) — cut server costs by ~90% alongside a NestJS / Aurora DB migration",
+          "Led the design and implementation of i18n multi-language support for a globally distributed user base (80%+ international traffic), improving survey-based customer satisfaction by 20%",
+          "Implemented debounce-based duplicate-vote prevention to ensure data integrity on the voting platform."
         ],
         "tech": ["React", "TypeScript", "React Query", "Emotion"]
       },

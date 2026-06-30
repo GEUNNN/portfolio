@@ -3,10 +3,10 @@
 import { useLanguage } from "../context/LanguageContext";
 
 const About = () => {
-  const { dict } = useLanguage();
+  const { dict, lang } = useLanguage();
 
   const stats = [
-    { value: "6+", label: dict.about.stats.experience },
+    { value: lang === "ko" ? "26.2만" : "260K+", label: dict.about.stats.mau },
     { value: "5M+", label: dict.about.stats.users },
     { value: "90%", label: dict.about.stats.impact },
   ];
